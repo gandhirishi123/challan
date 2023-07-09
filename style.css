@@ -1,0 +1,30 @@
+.container{
+    text-align: center;
+}
+table{
+   margin-left: 10%;
+}
+td {
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+h4{
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+#Challan{
+   
+    border: 2px solid black;
+}

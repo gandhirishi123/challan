@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHALLAN HT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-5" id="inputtable">
+        <p>
+            <input type="number" id="cn" placeholder=" Challan No" ><br><br>
+            <input type="text" id="cname" placeholder="Customer name"><br><br>
+            <input type="text" id="cadd" placeholder="Customer Address"><br><br>
+            <input type="number" id="cno" placeholder=" Customer Phone NO"><br><br>
+            <input type="text" id="sname" placeholder="Item name"><br><br>
+            <input type="number" id="pm" placeholder=" Width"><br><br>
+            <input type="number" id="cm" placeholder="Qty"><br><br>
+            <input type="number" id="mm" placeholder="Rate"><br><br>
+            <input type="number" id="vm" placeholder="Others"><br><br>
+            <input type="button" id="sb" value="submit">
+            <input type="button" id="pb" value="print" onclick="printContent()">
+        </p>
+    </div>
+    <div id="print">
+        <div class="container" id="Challan" ></div>
+    </div>
+    <script>
+    function printContent() {
+        var inputTable = document.getElementById("inputtable");
+        var printSection = document.getElementById("print");
+
+        if (inputTable && printSection) {
+            inputTable.style.display = "none"; // Hide input table
+            printSection.style.display = "block"; // Show print section
+                window.print();
+        } else {
+            console.error("Error: Element IDs not found");
+        }
+    }
+</script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
