@@ -30,20 +30,22 @@ function fun1() {
     document.getElementById('Challan').innerHTML += `
     <br>
     <p>|| श्री ||</p>
+    <div>
+    <p>DELIVERY CHALLAN CUM<br>
+    PROFORMA INVOICE
+    </p>
+    </div>
     <h1>HEMANT TRADERS</h1>
     <h4>1281, SADASHIV PETH, VERTEX ARCADE,<br> SHOP 5,PUNE-411030 <br> <br>
         PH (020)24467833 /24473403/24497533 <br>
         M:9422080922 <br> EMAIL:hemanttraders111@yahoo.in <br> <br>
         GSTIN-27AAVPG7824M1ZX
     </h4>
-    <br><h2>DELIVERY CHALLAN CUM<br>
-    PROFORMA INVOICE
-    </h2><br>
+    <br><br>
     <h4>#${i}/BWD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DATE ${dateString} </h4>
     <h2> M/S ${j} <br></h2>
     <h4>${k}</h4>
     <h5>${m}</h5>
-    <h2> MOST URGENT DELIVERY VIP CLIENT</h2>
     <p>RECEIVED THE BELOW MENTIONED IN GOOD ORDER AND CONDITION</p>
     <table border="1">
     <thead>
